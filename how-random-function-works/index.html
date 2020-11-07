@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Random number</title>
+<meta charset="utf-8">
+<meta name="description" content="How random numbers and RNG works">
+<meta name="keywords" content="HTML, CSS, JavaScript, technology, content, SEO, work, random, information, contributions">
+<meta name="author" content="akash chikara">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<link rel="icon" href="../images/favicon.png" type="image/png">
+<link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Lora:400,400i,700,700i&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Abril+Fatface&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../css/style.css">
+<link rel="stylesheet" href="../css/A.open-iconic-bootstrap.min.css animate.css owl.carousel.min.css owl.theme.default.min.css magnific-popup.css aos.css ionicons.min.css bootstrap-datepicker.css jquery.timepicker.css flaticon..css">
+</head>
+<body>
+<div id="colorlib-page">
+<a href="#" class="js-colorlib-nav-toggle colorlib-nav-toggle"><i></i></a>
+<aside id="colorlib-aside" role="complementary" class="js-fullheight">
+<nav id="colorlib-main-menu" role="navigation">
+<ul>
+<li><a href="https://slashbox.tech/">Home</a></li>
+<li><a href="../dark-mode-with-one-line-css/">CSS</a></li>
+<li><a href="../javascript/">Javascript</a></li>
+<li><a href="#">Services</a></li>
+<li><a href="../about/">About</a></li>
+<li><a href="https://slashbox.in/contact">Contact</a></li>
+</ul>
+</nav>
+<div class="colorlib-footer">
+<h1 id="colorlib-logo" class="mb-4 slashbox"><a href="https://slashbox.tech/" style="background-image:url(../images/slashbox.jpg)">SlashBox</a></h1>
+<div class="mb-4">
+<h3>Subscribe for newsletter</h3>
+<form action="#" class="colorlib-subscribe-form">
+<div class="form-group d-flex">
+<div class="icon"><span class="icon-paper-plane"></span></div>
+<input type="text" class="form-control" placeholder="Enter Email Address">
+</div>
+</form>
+</div>
+<p class="pfooter">Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved</p>
+</div>
+</aside>
+<div id="colorlib-main">
+<section class="ftco-section ftco-no-pt ftco-no-pb">
+<div class="container">
+<div class="row d-flex">
+<div class="col-xl-8 px-md-5 py-5">
+<div class="row pt-md-4">
+<div class="col-md-12">
+<div class="blog-entry-2 ftco-animate">
+<div class="text pt-4">
+<h1 class="mb-4" style="font-weight: 600;">How random numbers and RNG works</h1>
+<p class="mb-4">Random numbers, you must have read/heard this word. but have you ever thought why these numbers are called random? and how these numbers are calculated?</p>
+<p class="mb-4">So, let's dive into this article to get a better understanding of how these things are done.</p>
+</div>
+<img src="../images/random.jpg" alt="" class="img-fluid">
+</br>
+</br>
+<p class="mb-4">This topic has become more controversial recently, with many people questioning whether Intel’s built-in hardware random number generator chip is trustworthy. To understand why it might not be trustworthy, you’ll have to understand how random numbers are generated in the first place, and what they’re used for.</p>
+<h3 class="mb-4">Random Number Generators(RNG)</h3>
+<p class="mb-4">Computers generate random number for everything from cryptography to video games and gambling. There are two categories of random numbers — “true” random numbers and pseudorandom numbers — and the difference is important for the security of encryption systems.</p>
+<p class="mb-4">Random number generators have applications in gambling, statistical sampling, computer simulation, cryptography, completely randomized design, and other areas where producing an unpredictable result is desirable. Generally, in applications having unpredictability as the paramount feature, such as in security applications, hardware generators are generally preferred over pseudo-random algorithms, where feasible.</p>
+<p class="mb-4">There are basically two parts of an RNG:</p>
+<P><ul><li>The seed</li><li>The number chosen from that seed</li></ul></P></br>
+<p class="mb-4">They are also used in cryptography – so long as the seed is secret. Sender and receiver can generate the same set of numbers automatically to use as keys.</p>
+<p class="mb-4">When you seed the RNG, you are giving it an equivalent to a starting point. That starting point then has a bunch of numbers that are "inside" of it that the program chooses from. In PHP, you can use srand() to "shuffle" the seeds, so you almost always get a different answer. You can then use rand(min, max) to go into the seed and choose a number between the min and the max, inclusive.</p>
+<h3 class="mb-4">"true" random numbers</h3>
+<p class="mb-4">To generate a “true” random number, the computer measures some type of physical phenomenon that takes place outside of the computer. For example, the computer could measure the radioactive decay of an atom. According to quantum theory, there’s no way to know for sure when radioactive decay will occur, so this is essentially “pure randomness” from the universe. An attacker wouldn’t be able to predict when radioactive decay would occur, so they wouldn’t know the random value.</p>
+<p class="mb-4">For a more day-to-day example, the computer could rely on atmospheric noise or simply use the exact time you press keys on your keyboard as a source of unpredictable data, or entropy. For example, your computer might notice that you pressed a key at exactly 0.23423523 seconds after 2 p.m.. Grab enough of the specific times associated with these key presses and you’ll have a source of entropy you can use to generate a “true” random number. You’re not a predictable machine, so an attacker can’t guess the precise moment when you press these keys.</p>
+<img src="../images/keys.png" alt="" class="img-fluid">
+</br>
+</br>
+<h3 class="mb-4">Pseudorandom Numbers</h3>
+<p class="mb-4">Pseudorandom numbers are an alternative to “true” random numbers. A computer could use a seed value and an algorithm to generate numbers that appear to be random, but that are in fact predictable. The computer doesn’t gather any random data from the environment.</p>
+<p class="mb-4">This isn’t necessarily a bad thing in every situation. For example, if you’re playing a video game, it doesn’t really matter whether the events that occur in that game are caused by “true” random numbers or pseudorandom numbers. On the other hand, if you’re using encryption, you don’t want to use pseudorandom numbers that an attacker could guess.</p>
+<img src="../images/prng.png" alt="" class="img-fluid">
+</br>
+</br>
+<h4 class="mb-4">#Possibly cheesy analogy ahead!</h4>
+<p class="mb-4">Random Number Generators(RNGs) are really generating pseudorandom numbers, since it's impossible to actually generate a TRULY random number. The only really truly random things are acts of God, like lightning.</p>
+<p class="mb-4">Think of each 'seed' as an ice chest, and then the random numbers as ice cubes. Let's say you have 1000 ice chests and each chest has 1000 ice cubes inside. At the county fair, they'll choose an ice chest to start using for drinks, and they can only use one ice cube. However, they only need ice cubes bigger than 1 cubic inch. So they'll choose a chest at random between those 1000 chests, and then they'll choose an ice cube inside that chest at random. If it works for the size they want, they use it. If it's not, they put it back in the chest with the others. If they want to make it a little more fun they change chests beforehand for total obliviousness, if you will!</p>
+<p class="mb-4">Hope this helps.</p>
+<p class="mb-4">Thanks for reading.</p>
+<div class="tag-widget post-tag-container mb-5 mt-5">
+<div class="tagcloud">
+<a href="#" class="tag-cloud-link">Technology</a>
+<a href="#" class="tag-cloud-link">Coding</a>
+<a href="#" class="tag-cloud-link">Learn</a>
+<a href="#" class="tag-cloud-link">Everything</a>
+</div>
+</div>
+<h3>About the Author :</h3>
+</br>
+<div class="about-author d-flex p-4 bg-light">
+<div class="bio mr-5">
+<img src="../images/akash.jpeg" alt="Image placeholder" class="img-fluid mb-4">
+</div>
+<div class="desc">
+<h3>Akash Chikara</h3>
+<p>Hii, I'm Akash chikara, a CS graduate with quite a knowledge of technology. Outside of work, I like traveling and nowadays getting an interest in writing.</p>
+</div>
+</div>
+</br>
+<div class="half">
+<p>Find this blog helpful? then share it with your contacts and if you find any error or mistake then do mail us <a href="mailto:akashchikara1998@gmail.com">Click here.</a></p>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="col-xl-4 sidebar ftco-animate bg-light pt-5">
+<div class="sidebar-box pt-md-4">
+<form action="#" class="search-form">
+<div class="form-group">
+<span class="icon icon-search"></span>
+<input type="text" class="form-control" placeholder="Type a keyword and hit enter">
+</div>
+</form>
+</div>
+<div class="sidebar-box ftco-animate">
+<h3 class="sidebar-heading">Categories</h3>
+<ul class="categories">
+<li><a href="../javascript/">Javascript <span>(1)</span></a></li>
+<li><a href="https://slashbox.tech/">Technology <span>(5)</span></a></li>
+<li><a href="#">Electricity <span>(0)</span></a></li>
+<li><a href="#">Systems <span>(0)</span></a></li>
+<li><a href="#">Networks <span>(0)</span></a></li>
+</ul>
+</div>
+<div class="sidebar-box ftco-animate">
+<h3 class="sidebar-heading">Popular blogs</h3>
+<div class="block-21 mb-4 d-flex">
+    <a class="blog-img mr-4" style="background-image:url(../images/codeing.jpg)"></a>
+    <div class="text">
+    <h3 class="heading"><a href="../why-learn-to-code-is-important/">Why learn to code is important</a></h3>
+    <p class="meta">
+        <span><i class="icon-calendar mr-2"></i>Nov 4, 2020</span>
+        <span><a href="../why-learn-to-code-is-important/"><i class="icon-folder-o mr-2"></i>Technology</a></span>
+        <span><i class="icon-person mr-2"></i>Ashish jagarwal</span>
+    </p>
+    </div>
+    </div>
+    <div class="block-21 mb-4 d-flex">
+    <a class="blog-img mr-4" style="background-image:url(../images/ecmascript.png)"></a>
+    <div class="text">
+    <h3 class="heading"><a href="../what-is-ecmascript-and-its-relation-with-javascript/">What is ECMAScript? and its realtion with javascript</a></h3>
+    <p class="meta">
+        <span><i class="icon-calendar mr-2"></i>Nov 4, 2020</span>
+        <span><a href="../what-is-ecmascript-and-its-relation-with-javascript/"><i class="icon-folder-o mr-2"></i>Technology</a></span>
+        <span><i class="icon-person mr-2"></i>Ashish Jagrawal</span>
+    </p>
+    </div>
+    </div>
+    <div class="block-21 mb-4 d-flex">
+    <a class="blog-img mr-4" style="background-image:url(../images/vscode.png)"></a>
+    <div class="text">
+    <h3 class="heading"><a href="../vs-code-stories/">Stories VSCode Extension</a></h3>
+    <p class="meta">
+        <span><i class="icon-calendar mr-2"></i>Nov 4, 2020</span>
+        <span><a href="../vs-code-stories/"><i class="icon-folder-o mr-2"></i>Technology</a></span>
+        <span><i class="icon-person mr-2"></i>Akash chikara</span>
+    </p>
+    </div>
+    </div>
+    <div class="block-21 mb-4 d-flex">
+    <a class="blog-img mr-4" style="background-image:url(../images/nextjsseo.png)"></a>
+    <div class="text">
+    <h3 class="heading"><a href="../how-does-nextjs-help-improve-website-seo/">How does NextJS help improve website SEO</a></h3>
+    <p class="meta">
+    <span><i class="icon-calendar mr-2"></i>Nov 4, 2020</span>
+    <span><a href="../how-does-nextjs-help-improve-website-seo/"><i class="icon-folder-o mr-2"></i>Technology</a></span>
+    <span><i class="icon-person mr-2"></i>Akash chikara</span>
+    </p>
+    </div>
+    </div>
+    <div class="block-21 mb-4 d-flex">
+    <a class="blog-img mr-4" style="background-image:url(../images/dark.png)"></a>
+    <div class="text">
+    <h3 class="heading"><a href="../dark-mode-with-one-line-css/">Dark mode with One line CSS</a></h3>
+    <p class="meta">
+    <span><i class="icon-calendar mr-2"></i>Nov 4, 2020</span>
+    <span><a href="../dark-mode-with-one-line-css/"><i class="icon-folder-o mr-2"></i>Technology</a></span>
+    <span><i class="icon-person mr-2"></i>Akash chikara</span>
+    </p>
+    </div>
+    </div>
+</div>
+<div class="sidebar-box ftco-animate">
+<h3 class="sidebar-heading">Tag Cloud</h3>
+<ul class="tagcloud">
+<a href="#" class="tag-cloud-link">Technology</a>
+<a href="#" class="tag-cloud-link">Human</a>
+<a href="#" class="tag-cloud-link">Robot</a>
+<a href="#" class="tag-cloud-link">Electricity</a>
+<a href="#" class="tag-cloud-link">Grid</a>
+<a href="#" class="tag-cloud-link">Scripts</a>
+<a href="#" class="tag-cloud-link">Leaves</a>
+<a href="#" class="tag-cloud-link">Nodes</a>
+</ul>
+</div>
+<div class="sidebar-box subs-wrap img py-4" style="background-image:url(../images/xbg_1.jpg.pagespeed.ic.yyDakF8d8Y.jpg)">
+<div class="overlay"></div>
+<h3 class="mb-4 sidebar-heading">Newsletter</h3>
+<p class="mb-4">Subscribe to us to get our latest updates on your mail.</p>
+<form action="#" class="subscribe-form">
+<div class="form-group">
+<input type="text" class="form-control" placeholder="Email Address">
+<input type="submit" value="Subscribe" class="mt-2 btn btn-white submit">
+</div>
+</form>
+</div>
+<div class="sidebar-box ftco-animate">
+<h3 class="sidebar-heading">Archives</h3>
+<ul class="categories">
+<li><a href="https://slashbox.tec/">November 2020 <span>(2)</span></a></li>
+<li><a href="https://slashbox.tech/">October 2020 <span>(3)</span></a></li>
+</ul>
+</div>
+<div class="sidebar-box ftco-animate">
+<h3 class="sidebar-heading">SlashBox.tech</h3>
+<p>A Technology-based blogging website that focuses on information and its usability. We believe that every single problem in the world can be solved by the proper use of time and technology.</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+</div>
+</div>
+<div id="ftco-loader" class="show fullscreen"><svg class="circular" width="48px" height="48px"><circle class="path-bg" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke="#eeeeee"></circle><circle class="path" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke-miterlimit="10" stroke="#F96D00"></circle></svg></div>
+<script src="../js/jquery.min.js.pagespeed.jm.xZH2zNe7lE.js"></script>
+<script src="../js/jquery-migrate-3.0.1.min.js popper.min.js bootstrap.min.js.pagespeed.jc.cOZzT1ibKL.js"></script><script>eval(mod_pagespeed_j9z0BOW3Xo);</script>
+<script>eval(mod_pagespeed_Sv59xs6XfY);</script>
+<script>eval(mod_pagespeed_6hivBMilT4);</script>
+<script src="../js/jquery.easing.1.3.js jquery.waypoints.min.js jquery.stellar.min.js owl.carousel.min.js.pagespeed.jc.anLNcYZbgm.js"></script><script>eval(mod_pagespeed_a9in6ca9LP);</script>
+<script>eval(mod_pagespeed_E5Rl_eUdra);</script>
+<script>eval(mod_pagespeed_J7fR9gg3IV);</script>
+<script>eval(mod_pagespeed_JGC9XV$UWo);</script>
+<script src="../js/jquery.magnific-popup.min.js aos.js jquery.animateNumber.min.js scrollax.min.js google-map.js main.js.pagespeed.jc.UmeK98YvuW.js"></script><script>eval(mod_pagespeed_9FDixMCPbL);</script>
+<script>eval(mod_pagespeed_cWDp1F0K9O);</script>
+<script>eval(mod_pagespeed_tBed9FYmsP);</script>
+<script>eval(mod_pagespeed_xipmmYMCNr);</script>
+<script>eval(mod_pagespeed_YuUFcjXVeT);</script>
+<script>eval(mod_pagespeed_6pY$MsZg3C);</script>
+</body>
+</html>

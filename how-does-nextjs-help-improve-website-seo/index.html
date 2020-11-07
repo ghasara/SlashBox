@@ -1,0 +1,291 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>NextJS-SEO</title>
+<meta charset="utf-8">
+<meta name="description" content="How does NextJS help improve website SEO">
+<meta name="keywords" content="HTML, CSS, JavaScript, technology, content, SEO, work, random, information, contributions">
+<meta name="author" content="Akash chikara">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<link rel="icon" href="../images/favicon.png" type="image/png">
+<link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Lora:400,400i,700,700i&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Abril+Fatface&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../css/style.css">
+<link rel="stylesheet" href="../css/A.open-iconic-bootstrap.min.css animate.css owl.carousel.min.css owl.theme.default.min.css magnific-popup.css aos.css ionicons.min.css bootstrap-datepicker.css jquery.timepicker.css flaticon..css">
+</head>
+<body>
+<div id="colorlib-page">
+<a href="#" class="js-colorlib-nav-toggle colorlib-nav-toggle"><i></i></a>
+<aside id="colorlib-aside" role="complementary" class="js-fullheight">
+<nav id="colorlib-main-menu" role="navigation">
+<ul>
+<li><a href="https://slashbox.tech/">Home</a></li>
+<li><a href="../dark-mode-with-one-line-css/">CSS</a></li>
+<li class="colorlib-active"><a href="../javascript/">Javascript</a></li>
+<li><a href="#">Services</a></li>
+<li><a href="../about/">About</a></li>
+<li><a href="https://slashbox.in/contact">Contact</a></li>
+</ul>
+</nav>
+<div class="colorlib-footer">
+<h1 id="colorlib-logo" class="mb-4 slashbox"><a href="https://slashbox.tech/" style="background-image:url(../images/slashbox.jpg)">SlashBox</a></h1>
+<div class="mb-4">
+<h3>Subscribe for newsletter</h3>
+<form action="#" class="colorlib-subscribe-form">
+<div class="form-group d-flex">
+<div class="icon"><span class="icon-paper-plane"></span></div>
+<input type="text" class="form-control" placeholder="Enter Email Address">
+</div>
+</form>
+</div>
+<p class="pfooter">Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved</p>
+</div>
+</aside>
+<div id="colorlib-main">
+<section class="ftco-section ftco-no-pt ftco-no-pb">
+<div class="container">
+<div class="row d-flex">
+<div class="col-xl-8 px-md-5 py-5">
+<div class="row pt-md-4">
+<div class="col-md-12">
+<div class="blog-entry-2 ftco-animate">
+<div class="text pt-4">
+<h1 class="mb-4" style="font-weight: 600;">How does NextJS help improve website SEO</h1>
+<p class="mb-4">There are a few ways to build modern applications, two of the most common applications include <a href="https://en.wikipedia.org/wiki/Single-page_application" target="_blank">single-page applications</a> and <a href="https://en.wikipedia.org/wiki/Server-side_scripting" target="_blank">server-rendered applications</a>.</p>
+</div>
+<img src="../images/nextjsseo.png" alt="" class="img-fluid">
+</br>
+</br>
+<p class="mb-4">Single-page applications can be pretty useful for applications that will require better performance. Although Google has made some updates on how their crawler processes single-page applications, we still have a lack of SEO results. Server-side rendered applications can achieve better SEO results in search engines and still have a pretty decent performance.</p>
+<p class="mb-4">The release of some awesome JavaScript frameworks, such as Next and Gatsby, has lead to more server-side applications being made. Let’s see a few reasons why single-page applications are not the best choice for some cases, especially for applications that are going to depend heavily on SEO.</p>
+<p class="mb-4">SEO bots crawl the web reading the HTML of each URL in their path. If that bot gets to a SPA page that is not SSR it’s going to be sent a big glob of Javascript instead of HTML. SEO bots don’t understand JS and they don’t always wait around for the JS to convert itself into HTML.¹ This means that these bots that decide what shows up on the first page of search results can’t read the page. If they can’t read the page, the page is not going to be served up by Google as the “best” option answer for a users search. This is where NextJS comes in.</p>
+<p class="mb-4">By wrapping your SPA page into NextJS all queries to the URLs for your site will always result in a bot-friendly HTML page. You get the best of both worlds. You get to write SPA sites while retaining the SEO benefits of a traditional website architecture.</p>
+<p class="mb-4">In fairness, NextJS does make development significantly more complicated — any attempt at SSR will. But if you need SSR benefits it’s arguably the best out-of-the-box option out there.</p>
+<p class="mb-4">To be candid, the title of this article is largely due to the fact that NextJS search trends have been rising and I believe that will continue to be the case. “The real-world effect of server-side-rendering on SEO” won’t do as well for organic search traffic. People will search for “NextJS SEO” more than “server side rendering SEO”.</p>
+<p class="mb-4">Google will let JS render itself into HTML but they won’t make any AJAX calls from your page. So if your page requires network requests to fetch content Google will never see the content that’s being fetched.</p>
+<p class="mb-4">Let’s go through an example with Next.js and see how it works.</p>
+<p class="mb-4">You can create a new Next.js application in one command, by using the setup "Create Next App":</p>
+<div class="about-author d-flex p-4 bg-light">
+<div class="desc">
+<code>npx create-next-app</code>
+</div>
+</div>
+</br>
+<p class="mb-4">To create a new route inside your application, all you have to do is create a new file inside the pages folder and create a new React component for it:</p>
+<div class="about-author d-flex p-4 bg-light">
+<div class="desc">
+<code>// pages/about.js</code></br>
+<code>const About = () => (</code></br>
+<code>div</code></br>
+<code>h1 About page /h1</code></br>
+<code>/div</code></br>
+<code>);</code></br>
+<code>export default About;</code></br>
+</div>
+</div>
+</br>
+<h3 class="mb-4">Meta tags</h3>
+<p class="mb-4">Meta tags provide data about your page to search engines and website visitors, they can affect the way users see your site in the search results, and can make a difference whether they will access your site or not. They’re only visible in the code, but they are a very important part of applications that want to prioritize SEO results.</p>
+<p class="mb-4">A meta tag basically tells the search engines what the content of that specific page is, what exactly that page is about, and how the search engine should show it.</p>
+<p class="mb-4">Next.js has a built-in component for appending meta tags to the head of the page:</p>
+<div class="about-author d-flex p-4 bg-light">
+<div class="desc">
+<code>import Head from 'next/head'</code>
+</div>
+</div>
+</br>
+<p class="mb-4">To insert a meta tag on a specific page, use the Head built-in component and add the specific meta tag:</p>
+<div class="about-author d-flex p-4 bg-light">
+<div class="desc">
+<code>import Head from 'next/head'</code></br>
+<code>const Example = () => {</code></br>
+<code>return (</code></br>
+<code>div</code></br>
+<code>Head</code></br>
+<code>title  Example  /title</code></br>
+<code>meta name="viewport" content="initial-scale=1.0, width=device-width" /</code></br>
+<code>/Head</code></br>
+<code>p Hi Next.js! /p</code></br>
+<code>div</code></br>
+<code>)</code></br>
+<code>}</code></br>
+<code>export default Example</code></br>
+</div>
+</div>
+</br>
+<p class="mb-4">A nice thing about the Head built-in component is that when you are adding a new meta tag, and you want to make sure that this meta tag will not be duplicated, you can use the key property and it will be rendered only once:</p>    
+<div class="about-author d-flex p-4 bg-light">
+<div class="desc">
+<code>meta name="viewport" content="initial-scale=1.0, width=device-width" key="viewport" /</code>
+</div>
+</div>
+</br>
+<p class="mb-4">A good SEO result can be achieved by simply starting to use some meta tags in your application. Here is a link of some important meta tags that you should be using to improve your SEO results.</p>   
+<a href="https://ahrefs.com/blog/seo-meta-tags/">SEO Meta Tags</a>
+</br>
+</br>
+</br>
+<p class="mb-4">Thanks for reading.</p>
+<div class="tag-widget post-tag-container mb-5 mt-5">
+<div class="tagcloud">
+<a href="#" class="tag-cloud-link">Technology</a>
+<a href="#" class="tag-cloud-link">Coding</a>
+<a href="#" class="tag-cloud-link">Learn</a>
+<a href="#" class="tag-cloud-link">Everything</a>
+</div>
+</div>
+<h3>About the Author :</h3>
+</br>
+<div class="about-author d-flex p-4 bg-light">
+<div class="bio mr-5">
+<img src="../images/akash.jpeg" alt="Image placeholder" class="img-fluid mb-4">
+</div>
+<div class="desc">
+<h3>Akash Chikara</h3>
+<p>Hii, I'm Akash chikara, a CS graduate with quite a knowledge of technology. Outside of work, I like traveling and nowadays getting an interest in writing.</p>
+</div>
+</div>
+</br>
+<div class="half">
+<p>Find this blog helpful? then share it with your contacts and if you find any error or mistake then do mail us <a href="mailto:akashchikara1998@gmail.com">Click here.</a></p>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="col-xl-4 sidebar ftco-animate bg-light pt-5">
+<div class="sidebar-box pt-md-4">
+<form action="#" class="search-form">
+<div class="form-group">
+<span class="icon icon-search"></span>
+<input type="text" class="form-control" placeholder="Type a keyword and hit enter">
+</div>
+</form>
+</div>
+<div class="sidebar-box ftco-animate">
+<h3 class="sidebar-heading">Categories</h3>
+<ul class="categories">
+<li><a href="../javascript/">Javascript <span>(1)</span></a></li>
+<li><a href="https://slashbox.tech/">Technology <span>(5)</span></a></li>
+<li><a href="#">Electricity <span>(0)</span></a></li>
+<li><a href="#">Systems <span>(0)</span></a></li>
+<li><a href="#">Networks <span>(0)</span></a></li>
+</ul>
+</div>
+<div class="sidebar-box ftco-animate">
+<h3 class="sidebar-heading">Popular Blogs</h3>
+<div class="block-21 mb-4 d-flex">
+    <a class="blog-img mr-4" style="background-image:url(../images/codeing.jpg)"></a>
+    <div class="text">
+    <h3 class="heading"><a href="../why-learn-to-code-is-important/">Why learn to code is important</a></h3>
+    <p class="meta">
+        <span><i class="icon-calendar mr-2"></i>Nov 4, 2020</span>
+        <span><a href="../why-learn-to-code-is-important/"><i class="icon-folder-o mr-2"></i>Technology</a></span>
+        <span><i class="icon-person mr-2"></i>Ashish jagarwal</span>
+    </p>
+    </div>
+    </div>
+    <div class="block-21 mb-4 d-flex">
+    <a class="blog-img mr-4" style="background-image:url(../images/ecmascript.png)"></a>
+    <div class="text">
+    <h3 class="heading"><a href="../what-is-ecmascript-and-its-relation-with-javascript/">What is ECMAScript? and its realtion with javascript</a></h3>
+    <p class="meta">
+        <span><i class="icon-calendar mr-2"></i>Nov 4, 2020</span>
+        <span><a href="../what-is-ecmascript-and-its-relation-with-javascript/"><i class="icon-folder-o mr-2"></i>Technology</a></span>
+        <span><i class="icon-person mr-2"></i>Ashish Jagrawal</span>
+    </p>
+    </div>
+    </div>
+    <div class="block-21 mb-4 d-flex">
+    <a class="blog-img mr-4" style="background-image:url(../images/vscode.png)"></a>
+    <div class="text">
+    <h3 class="heading"><a href="../vs-code-stories/">Stories VSCode Extension</a></h3>
+    <p class="meta">
+        <span><i class="icon-calendar mr-2"></i>Nov 4, 2020</span>
+        <span><a href="../vs-code-stories/"><i class="icon-folder-o mr-2"></i>Technology</a></span>
+        <span><i class="icon-person mr-2"></i>Akash chikara</span>
+    </p>
+    </div>
+    </div>
+    <div class="block-21 mb-4 d-flex">
+    <a class="blog-img mr-4" style="background-image:url(../images/random.jpg)"></a>
+    <div class="text">
+    <h3 class="heading"><a href="../how-random-function-works/">How random numbers works</a></h3>
+    <p class="meta">
+    <span><i class="icon-calendar mr-2"></i>Nov 4, 2020</span>
+    <span><a href="../how-random-function-works/"><i class="icon-folder-o mr-2"></i>Technology</a></span>
+    <span><i class="icon-person mr-2"></i>Akash chikara</span>
+    </p>
+    </div>
+    </div>
+    <div class="block-21 mb-4 d-flex">
+    <a class="blog-img mr-4" style="background-image:url(../images/dark.png)"></a>
+    <div class="text">
+    <h3 class="heading"><a href="../dark-mode-with-one-line-css/">Dark mode with One line CSS</a></h3>
+    <p class="meta">
+    <span><i class="icon-calendar mr-2"></i>Nov 4, 2020</span>
+    <span><a href="../dark-mode-with-one-line-css/"><i class="icon-folder-o mr-2"></i>Technology</a></span>
+    <span><i class="icon-person mr-2"></i>Akash chikara</span>
+    </p>
+    </div>
+    </div>
+</div>
+<div class="sidebar-box ftco-animate">
+<h3 class="sidebar-heading">Tag Cloud</h3>
+<ul class="tagcloud">
+<a href="#" class="tag-cloud-link">Technology</a>
+<a href="#" class="tag-cloud-link">Human</a>
+<a href="#" class="tag-cloud-link">Robot</a>
+<a href="#" class="tag-cloud-link">Electricity</a>
+<a href="#" class="tag-cloud-link">Grid</a>
+<a href="#" class="tag-cloud-link">Scripts</a>
+<a href="#" class="tag-cloud-link">Leaves</a>
+<a href="#" class="tag-cloud-link">Nodes</a>
+</ul>
+</div>
+<div class="sidebar-box subs-wrap img py-4" style="background-image:url(../images/xbg_1.jpg.pagespeed.ic.yyDakF8d8Y.jpg)">
+<div class="overlay"></div>
+<h3 class="mb-4 sidebar-heading">Newsletter</h3>
+<p class="mb-4">Subscribe to us to get our latest updates on your mail.</p>
+<form action="#" class="subscribe-form">
+<div class="form-group">
+<input type="text" class="form-control" placeholder="Email Address">
+<input type="submit" value="Subscribe" class="mt-2 btn btn-white submit">
+</div>
+</form>
+</div>
+<div class="sidebar-box ftco-animate">
+<h3 class="sidebar-heading">Archives</h3>
+<ul class="categories">
+<li><a href="https://slashbox.tech/">November 2020 <span>(2)</span></a></li>
+<li><a href="https://slashbox.tech/">October 2020 <span>(3)</span></a></li>
+</ul>
+</div>
+<div class="sidebar-box ftco-animate">
+<h3 class="sidebar-heading">SlashBox.tech</h3>
+<p>A Technology-based blogging website that focuses on information and its usability. We believe that every single problem in the world can be solved by the proper use of time and technology.</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+</div>
+</div>
+<div id="ftco-loader" class="show fullscreen"><svg class="circular" width="48px" height="48px"><circle class="path-bg" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke="#eeeeee"></circle><circle class="path" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke-miterlimit="10" stroke="#F96D00"></circle></svg></div>
+<script src="../js/jquery.min.js.pagespeed.jm.xZH2zNe7lE.js"></script>
+<script src="../js/jquery-migrate-3.0.1.min.js popper.min.js bootstrap.min.js.pagespeed.jc.cOZzT1ibKL.js"></script><script>eval(mod_pagespeed_j9z0BOW3Xo);</script>
+<script>eval(mod_pagespeed_Sv59xs6XfY);</script>
+<script>eval(mod_pagespeed_6hivBMilT4);</script>
+<script src="../js/jquery.easing.1.3.js jquery.waypoints.min.js jquery.stellar.min.js owl.carousel.min.js.pagespeed.jc.anLNcYZbgm.js"></script><script>eval(mod_pagespeed_a9in6ca9LP);</script>
+<script>eval(mod_pagespeed_E5Rl_eUdra);</script>
+<script>eval(mod_pagespeed_J7fR9gg3IV);</script>
+<script>eval(mod_pagespeed_JGC9XV$UWo);</script>
+<script src="../js/jquery.magnific-popup.min.js aos.js jquery.animateNumber.min.js scrollax.min.js google-map.js main.js.pagespeed.jc.UmeK98YvuW.js"></script><script>eval(mod_pagespeed_9FDixMCPbL);</script>
+<script>eval(mod_pagespeed_cWDp1F0K9O);</script>
+<script>eval(mod_pagespeed_tBed9FYmsP);</script>
+<script>eval(mod_pagespeed_xipmmYMCNr);</script>
+<script>eval(mod_pagespeed_YuUFcjXVeT);</script>
+<script>eval(mod_pagespeed_6pY$MsZg3C);</script>
+</body>
+</html>

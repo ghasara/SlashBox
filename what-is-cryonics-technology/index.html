@@ -1,9 +1,9 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-<title>How does NextJS help improve website SEO</title>
+<title>What is cryonics technology</title>
 <meta charset="utf-8">
-<meta name="description" content="How does NextJS help improve website SEO">
+<meta name="description" content="What is cryonics technology">
 <meta name="keywords" content="HTML, CSS, JavaScript, technology, content, SEO, work, random, information, contributions">
 <meta name="author" content="Akash chikara">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -30,7 +30,7 @@
 <ul>
 <li><a href="https://slashbox.tech/">Home</a></li>
 <li><a href="../dark-mode-with-one-line-css/">CSS</a></li>
-<li class="colorlib-active"><a href="../javascript/">Javascript</a></li>
+<li><a href="../javascript/">Javascript</a></li>
 <li><a href="#">Services</a></li>
 <li><a href="../about/">About</a></li>
 <li><a href="https://slashbox.in/contact">Contact</a></li>
@@ -59,81 +59,39 @@
 <div class="col-md-12">
 <div class="blog-entry-2 ftco-animate">
 <div class="text pt-4">
-<h1 class="mb-4" style="font-weight: 600;">How does NextJS help improve website SEO</h1>
-<p class="mb-4">There are a few ways to build modern applications, two of the most common applications include <a href="https://en.wikipedia.org/wiki/Single-page_application" target="_blank">single-page applications</a> and <a href="https://en.wikipedia.org/wiki/Server-side_scripting" target="_blank">server-rendered applications</a>.</p>
+<h1 class="mb-4" style="font-weight: 600;">What is CRYONICS Technology</h1>
+<p class="mb-4">All of you must have heard about Blood banks, Sperm banks, Stem cell banks but have you ever heard of a <span style="font-weight:600">CRYONICS Technology</span> that is <span style="font-weight:600">used to preserve body even after death</span> with the hope that you will be revived in coming future when technology develops up to that level.</p>
 </div>
-<img src="../images/nextjsseo.png" alt="" class="img-fluid">
+<img src="../images/cryonics1.jpg" alt="" class="img-fluid">
 </br>
 </br>
-<p class="mb-4">Single-page applications can be pretty useful for applications that will require better performance. Although Google has made some updates on how their crawler processes single-page applications, we still have a lack of SEO results. Server-side rendered applications can achieve better SEO results in search engines and still have a pretty decent performance.</p>
-<p class="mb-4">The release of some awesome JavaScript frameworks, such as Next and Gatsby, has lead to more server-side applications being made. Let’s see a few reasons why single-page applications are not the best choice for some cases, especially for applications that are going to depend heavily on SEO.</p>
-<p class="mb-4">SEO bots crawl the web reading the HTML of each URL in their path. If that bot gets to a SPA page that is not SSR it’s going to be sent a big glob of Javascript instead of HTML. SEO bots don’t understand JS and they don’t always wait around for the JS to convert itself into HTML.¹ This means that these bots that decide what shows up on the first page of search results can’t read the page. If they can’t read the page, the page is not going to be served up by Google as the “best” option answer for a users search. This is where NextJS comes in.</p>
-<p class="mb-4">By wrapping your SPA page into NextJS all queries to the URLs for your site will always result in a bot-friendly HTML page. You get the best of both worlds. You get to write SPA sites while retaining the SEO benefits of a traditional website architecture.</p>
-<p class="mb-4">In fairness, NextJS does make development significantly more complicated — any attempt at SSR will. But if you need SSR benefits it’s arguably the best out-of-the-box option out there.</p>
-<p class="mb-4">To be candid, the title of this article is largely due to the fact that NextJS search trends have been rising and I believe that will continue to be the case. “The real-world effect of server-side-rendering on SEO” won’t do as well for organic search traffic. People will search for “NextJS SEO” more than “server side rendering SEO”.</p>
-<p class="mb-4">Google will let JS render itself into HTML but they won’t make any AJAX calls from your page. So if your page requires network requests to fetch content Google will never see the content that’s being fetched.</p>
-<p class="mb-4">Let’s go through an example with Next.js and see how it works.</p>
-<p class="mb-4">You can create a new Next.js application in one command, by using the setup "Create Next App":</p>
-<div class="about-author d-flex p-4 bg-light">
-<div class="desc">
-<code>npx create-next-app</code>
-</div>
-</div>
-</br>
-<p class="mb-4">To create a new route inside your application, all you have to do is create a new file inside the pages folder and create a new React component for it:</p>
-<div class="about-author d-flex p-4 bg-light">
-<div class="desc">
-<code>// pages/about.js</code></br>
-<code>const About = () => (</code></br>
-<code>div</code></br>
-<code>h1 About page /h1</code></br>
-<code>/div</code></br>
-<code>);</code></br>
-<code>export default About;</code></br>
-</div>
-</div>
-</br>
-<h3 class="mb-4">Meta tags</h3>
-<p class="mb-4">Meta tags provide data about your page to search engines and website visitors, they can affect the way users see your site in the search results, and can make a difference whether they will access your site or not. They’re only visible in the code, but they are a very important part of applications that want to prioritize SEO results.</p>
-<p class="mb-4">A meta tag basically tells the search engines what the content of that specific page is, what exactly that page is about, and how the search engine should show it.</p>
-<p class="mb-4">Next.js has a built-in component for appending meta tags to the head of the page:</p>
-<div class="about-author d-flex p-4 bg-light">
-<div class="desc">
-<code>import Head from 'next/head'</code>
-</div>
-</div>
-</br>
-<p class="mb-4">To insert a meta tag on a specific page, use the Head built-in component and add the specific meta tag:</p>
-<div class="about-author d-flex p-4 bg-light">
-<div class="desc">
-<code>import Head from 'next/head'</code></br>
-<code>const Example = () => {</code></br>
-<code>return (</code></br>
-<code>div</code></br>
-<code>Head</code></br>
-<code>title  Example  /title</code></br>
-<code>meta name="viewport" content="initial-scale=1.0, width=device-width" /</code></br>
-<code>/Head</code></br>
-<code>p Hi Next.js! /p</code></br>
-<code>div</code></br>
-<code>)</code></br>
-<code>}</code></br>
-<code>export default Example</code></br>
-</div>
-</div>
-</br>
-<p class="mb-4">A nice thing about the Head built-in component is that when you are adding a new meta tag, and you want to make sure that this meta tag will not be duplicated, you can use the key property and it will be rendered only once:</p>    
-<div class="about-author d-flex p-4 bg-light">
-<div class="desc">
-<code>meta name="viewport" content="initial-scale=1.0, width=device-width" key="viewport" /</code>
-</div>
-</div>
-</br>
-<p class="mb-4">A good SEO result can be achieved by simply starting to use some meta tags in your application. Here is a link of some important meta tags that you should be using to improve your SEO results.</p>   
-<a href="https://ahrefs.com/blog/seo-meta-tags/">SEO Meta Tags</a>
+<p class="mb-4">The idea of cryonics technology is that if you die from a disease which is currently incurable, scientists refrigerate your body. When in the near future, the technology will be developed to revive the body and the cure for your disease is found, you will be awakened, cured and allowed to live a new healthy life.</p>
+<h4 class="mb-4">Procedure</h4>
+<p class="mb-4">Cryonics preservation team arrives at the site and provides minimum oxygen to the body and the brain to preserve minimum brain functionalities.</p>
+<p class="mb-4">After that the body is packed in ice and is taken to the storage facilities. At the facility, the blood is removed from the body and an organ preserving solution is then filled inside the body.</p>
+<p class="mb-4">After that the is body is preserved in cryonics tanks by cooling it to a temperature of -196 degree Celsius. Right that’s the temperature of liquid nitrogen which is used for cooling and maintaining that temperature. The bodies are suspended as head down in these tanks as brain is what we would like to be least damaged in case of catastrophe.</p>
+<p class="mb-4">Currently there are many organisation who provide this facility. Rules vary across different establishments.</p>
+<img src="../images/cryonics2.jpg" alt="" class="img-fluid">
 </br>
 </br>
+<h4 class="mb-4">Cryonic Suspension</h4>
+<p class="mb-4">The cryonic cryopreservation state is sometimes described as "cryonic suspension," because the patient's state is unchanging and therefore "suspended in time." However, cryopreservation is not "suspended animation" in the sense of being reversible by current technology.</p>
+<h4 class="mb-4">Neuro</h4>
+<p class="mb-4">"Neuro" is short for neurocryopreservation, and it refers to the practice of removing and cryopreserving only the head of a person declared legally dead. The theory is that only the information contained in the brain is of any importance, and that a new body could be cloned or regenerated at some point in the future.</p>
+<h4 class="mb-4">Possiblity of revival</h4>
+<p><li>Many biological specimens have been cryopreserved, stored at liquid nitrogen temperature where all decay ceases, and revived; these include whole insects, vinegar eels, many types of human tissue including brain tissue, human embryos which have later grown into healthy children, and a few small mammalian organs. Increasingly more cells, organs and tissues are being reversibly cryopreserved.</li></p>
+<p><li>The repair capabilities of molecular biology and nanotechnology increasingly point to a future technology that can repair damage due to aging, disease and cryonic suspension.</li></p>
+<p><li>Current progress in stem cell tissue regeneration, 3D biological printers and other advanced technologies convinces many experts that we might be able to revive people in a healthy and youthful state when these technologies mature.</li></p>
+<h4 class="mb-4">Safety of patients</h4>
+<p class="mb-4">The oldest patient currently still being held in cryopreservation is Dr. James Bedford, who was cryopreserved in 1967. He has survived the Cold War, the Vietnam War, the Gulf War, Watergate, the collapse of the Soviet Union and the 9/11 attacks — which is more than many of his contemporaries can say. The world is (relatively) stable at the moment, global world war doesn't seem likely, and the economy is relatively stable.</p>
+<img src="../images/cryonics3.jpg" alt="" class="img-fluid">
 </br>
+</br>
+<h4 class="mb-4">Raising the dead</h4>
+<p class="mb-4">Cryonics is a matter of rational procedure, not religious miracle. Cryonics can't restore life to people whose brains have been long been physically destroyed — a Lincoln, or a Julius Caesar, or those cremated. Cryonics simply — but reasonably — claims that if you cryopreserve a person in a way that limits damage, then that person's brain structure may be preserved sufficiently to make the eventual recovery of life and health at least possible.</p>
+<h4 class="mb-4">Scientific Studies</h4>
+<p class="mb-4">Dr. Ralph Merkle, in his essay 'The Molecular Repair Of The Brain', observes, "Interestingly (and somewhat to the author's surprise) there are no published technical articles on cryonics that claim it won't work...A literature search on cryonics along with personal inquiries has not produced a single technical paper on the subject that claims that cryonics is not feasible. On the other hand, technical papers and analyses of cryonics that speak favorably of its eventual success have been published. It is unreasonable, given the extant literature, to conclude that cryonics is unlikely to work."</p>
+<p class="mb-4">Notable technical papers which provides scientific evidence for the feasibility of cryonics are: ANNALS OF THE NEW YORK ACADEMY OF SCIENCES; Lemler,J; 1019:559-563 (2004) and REJUVENATION RESEARCH; Best,B; 11(2):493-503 (2008).</p>
 <p class="mb-4">Thanks for reading.</p>
 <div class="tag-widget post-tag-container mb-5 mt-5">
 <div class="tagcloud">
@@ -183,18 +141,7 @@
 </ul>
 </div>
 <div class="sidebar-box ftco-animate">
-<h3 class="sidebar-heading">Popular Blogs</h3>
-<div class="block-21 mb-4 d-flex">
-    <a class="blog-img mr-4" style="background-image:url(../images/cryonics1.jpg)"></a>
-    <div class="text">
-    <h3 class="heading"><a href="../what-is-cryonics-technology/">What is CRYONICS Technology</a></h3>
-    <p class="meta">
-        <span><i class="icon-calendar mr-2"></i>Nov 4, 2020</span>
-        <span><a href="../what-is-cryonics-technology/"><i class="icon-folder-o mr-2"></i>Technology</a></span>
-        <span><i class="icon-person mr-2"></i>Ashish Jagrawal</span>
-    </p>
-    </div>
-    </div>
+<h3 class="sidebar-heading">Popular blogs</h3>
 <div class="block-21 mb-4 d-flex">
     <a class="blog-img mr-4" style="background-image:url(../images/codeing.jpg)"></a>
     <div class="text">
@@ -221,11 +168,11 @@
     <a class="blog-img mr-4" style="background-image:url(../images/vscode.png)"></a>
     <div class="text">
     <h3 class="heading"><a href="../vs-code-stories/">Stories VSCode Extension</a></h3>
-    <p class="meta">
-        <span><i class="icon-calendar mr-2"></i>Nov 4, 2020</span>
-        <span><a href="../vs-code-stories/"><i class="icon-folder-o mr-2"></i>Technology</a></span>
-        <span><i class="icon-person mr-2"></i>Akash chikara</span>
-    </p>
+        <p class="meta">
+            <span><i class="icon-calendar mr-2"></i>Nov 4, 2020</span>
+            <span><a href="../vs-code-stories/"><i class="icon-folder-o mr-2"></i>Technology</a></span>
+            <span><i class="icon-person mr-2"></i>Akash chikara</span>
+        </p>
     </div>
     </div>
     <div class="block-21 mb-4 d-flex">
@@ -235,6 +182,17 @@
     <p class="meta">
     <span><i class="icon-calendar mr-2"></i>Nov 4, 2020</span>
     <span><a href="../how-random-function-works/"><i class="icon-folder-o mr-2"></i>Technology</a></span>
+    <span><i class="icon-person mr-2"></i>Akash chikara</span>
+    </p>
+    </div>
+    </div>
+    <div class="block-21 mb-4 d-flex">
+    <a class="blog-img mr-4" style="background-image:url(../images/nextjsseo.png)"></a>
+    <div class="text">
+    <h3 class="heading"><a href="../how-does-nextjs-help-improve-website-seo/">How does NextJS help improve website SEO</a></h3>
+    <p class="meta">
+    <span><i class="icon-calendar mr-2"></i>Nov 4, 2020</span>
+    <span><a href="../how-does-nextjs-help-improve-website-seo/"><i class="icon-folder-o mr-2"></i>Technology</a></span>
     <span><i class="icon-person mr-2"></i>Akash chikara</span>
     </p>
     </div>
@@ -278,7 +236,7 @@
 <div class="sidebar-box ftco-animate">
 <h3 class="sidebar-heading">Archives</h3>
 <ul class="categories">
-<li><a href="https://slashbox.tech/">November 2020 <span>(6)</span></a></li>
+<li><a href="https://slashbox.tec/">November 2020 <span>(6)</span></a></li>
 </ul>
 </div>
 <div class="sidebar-box ftco-animate">

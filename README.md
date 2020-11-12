@@ -1,1 +1,1 @@
-You can visit the website at https://slashbox.tech
+You can visit the website at https://slashbox.tech/

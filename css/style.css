@@ -6,6 +6,14 @@
 	z-index: -99;
 }
 
+.slashbox-sticky{
+	    position: relative;
+		position:sticky;
+		top:5px;
+		width:100%;
+		height:100vh;
+}
+
 .slashbox {
 	animation: slashbox 2s infinite;
 	-webkit-animation: slashbox 2s infinite;

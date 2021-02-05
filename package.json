@@ -1,0 +1,22 @@
+{
+  "name": "slashbox",
+  "version": "1.0.0",
+  "description": "You can visit the website at https://slashbox.tech/",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ghasara/slashbox.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ghasara/slashbox/issues"
+  },
+  "homepage": "https://github.com/ghasara/slashbox#readme",
+  "dependencies": {
+    "request": "^2.88.2"
+  }
+}

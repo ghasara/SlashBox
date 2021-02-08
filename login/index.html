@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Home | SlashBox</title>
+<meta charset="utf-8">
+<meta name="description" content="A Technology-based blogging website that focuses on information and its usability.">
+<meta name="keywords" content="HTML, CSS, JavaScript, technology, content, SEO, work, random, information, contributions">
+<meta name="author" content="Open to all">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<link rel="icon" href="../images/favicon.png" type="image/png">
+<link href="https://fonts.googleapis.com/css?family=Montserrat:400,700|Raleway:300,600" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-5H7SFSLNCD"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-5H7SFSLNCD');
+</script>
+</head>
+<body>   
+<div class="container">
+    <section id="formHolder">
+       <div class="row">
+          <div class="col-sm-6 brand">
+             <div class="heading">
+                <h2>Slashbox</h2>
+                <p>An Open-Community</p>
+             </div>
+             <div class="success-msg">
+                <p>Great! You are one of our members now</p>
+                <a href="../" class="profile">Slashbox Homepage</a>
+             </div>
+          </div>
+          <div class="col-sm-6 form">
+             <div class="login form-peice switched">
+                <form class="login-form" action="#" method="post">
+                   <div class="form-group">
+                      <label for="loginemail">Email Adderss</label>
+                      <input type="email" name="loginemail" id="loginemail" required>
+                      <span class="error"></span>
+                   </div>
+                   <div class="form-group">
+                      <label for="loginPassword">Password</label>
+                      <input type="password" name="loginPassword" id="loginPassword" required>
+                      <span class="error"></span>
+                   </div>
+                   <div class="CTA">
+                      <input type="submit" value="Login">
+                      <a href="#" class="switch">I'm New</a>
+                   </div>
+                </form>
+             </div>
+             <div class="signup form-peice">
+                <form class="signup-form" action="#" method="post">
+                   <div class="form-group">
+                      <label for="name">Full Name</label>
+                      <input type="text" name="username" id="name" class="name">
+                      <span class="error"></span>
+                   </div>
+                   <div class="form-group">
+                      <label for="email">Email Adderss</label>
+                      <input type="email" name="emailAdress" id="email" class="email">
+                      <span class="error"></span>
+                   </div>
+                   <div class="form-group">
+                      <label for="password">Password</label>
+                      <input type="password" name="password" id="password" class="pass">
+                      <span class="error"></span>
+                   </div>
+                   <div class="form-group">
+                      <label for="passwordCon">Confirm Password</label>
+                      <input type="password" name="passwordCon" id="passwordCon" class="passConfirm">
+                      <span class="error"></span>
+                   </div>
+                   <div class="CTA">
+                      <input type="submit" value="Signup" id="submit">
+                      <a href="#" class="switch">I have an account</a>
+                   </div>
+                </form>
+             </div>
+          </div>
+       </div>
+    </section>
+ </div>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+<script src="script.js"></script>
+</body>
+</html>

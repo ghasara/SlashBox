@@ -307,16 +307,17 @@ footer p a:hover, footer p a:focus:hover {
        min-height: 100vh !important;
    }
    section#formHolder div.brand .heading.active {
-       top: 200px;
+       top: 240px;
        left: 50%;
        transform: translate(-50%, -50%);
    }
    section#formHolder div.brand .success-msg p {
-       font-size: 16px;
+       font-size: 18px;
+       margin-bottom:20px;
    }
    section#formHolder div.brand .success-msg a {
-       padding: 5px 30px;
-       font-size: 10px;
+       padding: 8px 20px;
+       font-size: 12px;
    }
    section#formHolder .form {
        width: 80vw;

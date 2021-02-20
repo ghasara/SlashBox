@@ -18,7 +18,7 @@ input {
 
 h1 {
    text-align: center;
-   text-transform: uppercase;
+   /* text-transform: uppercase; */
    margin-bottom: 40px;
    font-weight: 700;
 }
@@ -97,7 +97,7 @@ section#formHolder {
 
 .brand .heading p {
    font-size: 15px;
-   font-weight: 300;
+   font-weight: 600;
    text-transform: uppercase;
    letter-spacing: 2px;
    white-space: 4px;
@@ -190,9 +190,9 @@ section#formHolder {
 }
 
 .form form label {
-   font-size: 12px;
-   font-weight: 400;
-   text-transform: uppercase;
+   font-size: 15px;
+   font-weight: 500;
+   /* text-transform: ; */
    font-family: "Montserrat", sans-serif;
    transform: translateY(40px);
    transition: all 0.4s;
@@ -243,12 +243,13 @@ section#formHolder {
 }
 
 .form form .CTA {
-   margin-top: 30px;
+   margin-top: 20px;
+   
 }
 
 .form form .CTA input {
    font-size: 15px;
-   font-weight: 500;
+   font-weight: 600;
    text-transform: uppercase;
    padding: 5px 30px;
    background: #0099ff;
